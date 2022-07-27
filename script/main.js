@@ -125,3 +125,67 @@ function slide_prev()
 	else
 	{console.log("No Child");}
 }
+
+// Contact Form Validation Logic
+let fullName = document.getElementById("username");
+let email = document.getElementById("mail");
+let pw = document.getElementById("pw");
+let nameError = document.getElementById("name__error");
+let emailError = document.getElementById("email__error");
+let pwError = document.getElementById("pw__error");
+
+fullName.addEventListener("keyup", function()
+{
+	console.log("Key left Up!");
+	if(fullName.value.length < 5)
+	{
+		nameError.classList.add("active__error");
+		nameError.innerHTML = "Value must be more than 4 characters";
+	}
+	else
+	{
+		nameError.classList.remove("active__error");
+		nameError.innerHTML = "";
+	}
+});
+email.addEventListener("keyup", function()
+{
+	console.log("Key left Up!");
+	let data = email.value;
+	if(!data.includes('@'))
+	{
+		console.log("Error");
+		emailError.classList.add("active__error");
+		emailError.innerHTML = "Please include '@' in your email";
+	}
+	else
+	{
+		console.log("No error");
+		emailError.classList.remove("active__error");
+		emailError.innerHTML = "";
+	}
+});
+pw.addEventListener("keyup", function()
+{
+	console.log("Key left Up!");
+	let data = pw.value;
+
+	if(data.length < 5)
+	{
+		pwError.classList.add("active__error");
+		pwError.innerHTML = "Weak Password";
+		pwError.style.color = "red";
+	}
+	else if(data.length < 10)
+	{
+		pwError.classList.add("active__error");
+		pwError.innerHTML = "Medium Password";
+		pwError.style.color = "blue";
+	}
+	else if(data.length < 15)
+	{
+		pwError.classList.add("active__error");
+		pwError.innerHTML = "Strong Password";
+		pwError.style.color = "green";
+	}
+});

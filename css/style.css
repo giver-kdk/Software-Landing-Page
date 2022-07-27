@@ -2,6 +2,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	scroll-behavior: smooth;
 }
 
 :root {
@@ -633,6 +634,7 @@
 	justify-content: space-around;
 	align-items: center;
 	flex-wrap: wrap;
+	/* border: 2px solid red; */
 }
 .contact__info--form
 {
@@ -640,7 +642,7 @@
 	flex-direction: column;
 	gap: 2px;
 	align-items: center;
-	width: 450px;
+	width: 500px;
 	box-shadow: 0px 0px 15px 0px rgb(184, 184, 184);
 }
 .form__label
@@ -659,7 +661,7 @@
 	border: 1px solid #b4b4b4;
 	border-radius: 7px;
 	background-color: #f4f4f4;
-	color: #b4b4b4;
+	color: #494949;
 	padding: 10px;
 }
 .contact__info--form .register__button
@@ -681,25 +683,40 @@
 	cursor: pointer;
 	background-color: rgb(27, 27, 27);
 }
-
-.contact__info--business
+.error
 {
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
+	font-family: arial;
+	font-size: 13px;
+	font-weight: 100;
+	width: 80%;
+	height: 20px;
+	/* border: 2px solid grey; */
+	color: red;
+	display: none;
 }
-.info__box
+.active__error
+{
+	display: block;
+}
+.goto__top
 {
 	display: flex;
-	align-items: center;
-	gap: 10px;
+	width: 80%;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+#up__arrow
+{
+	transform: rotateZ(-90deg);
+	width: 30px;
+	/* margin-left: 100px; */
 }
 /* Footer Section Styling */
 footer
 {
 	margin-top: 50px;
 	height: 100px;
-	background-color: #c3c3c3;
+	background-color: #8b8b8b;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
@@ -716,8 +733,10 @@ footer p
 .legal__policy
 {
 	list-style: none;
+	width: 80%;
 	display: flex;
 	gap: 10px;
+	/* border: 2px solid red; */
 	justify-content: space-between;
 }
 .legal__policy a
@@ -728,3 +747,42 @@ footer p
 	font-size: 13px;
 	font-weight: 300;
 }
+.policies
+{
+	display: flex;
+	gap: 50px;
+	list-style: none;
+}
+.socials
+{
+	display: flex;
+	gap: 10px;
+	list-style: none;
+}
+.socials img
+{
+	width: 24px;
+	transition: all 0.2s ease-in-out;
+}
+.socials img:hover {
+	animation-name: shake;
+	animation-duration: 0.4s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+	filter: invert(1) drop-shadow(0px 0px 10px #14f6be);
+  }
+  @keyframes shake {
+	from {
+	  transform: scale(1) rotate(0deg);
+	}
+	40% {
+	  transform: scale(1.1) rotate(-30deg);
+	}
+	80% {
+	  transform: scale(1.1) rotate(30deg);
+	}
+	to {
+	  transform: scale(1.1) rotate(0deg);
+	}
+  }
