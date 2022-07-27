@@ -99,13 +99,9 @@ function slide_next()
 	if(active.nextElementSibling.nextElementSibling)
 	{
 		active.classList.remove("active__item");
-		active.classList.add("inframe__item");
 	
-		active.previousElementSibling.classList.remove("inframe__item");
-		active.nextElementSibling.classList.remove("inframe__item");
 		active.nextElementSibling.classList.add("active__item");
 		
-		active.nextElementSibling.nextElementSibling.classList.add("inframe__item");
 	}
 	else
 	{console.log("No Child");}
@@ -115,13 +111,16 @@ function slide_prev()
 	let active = document.querySelector('.active__item');
 	if(active.previousElementSibling.previousElementSibling)
 	{
+		// let slide = document.querySelectorAll(".testimonial__item");
+		// slide.forEach((obj) =>
+		// {
+		// 	obj.classList.remove("testimonial__item");
+		// 	obj.classList.add("testimonial__item");
+		// })
 		active.classList.remove("active__item");
-		active.classList.add("inframe__item");
 	
-		active.nextElementSibling.classList.remove("inframe__item");
 		active.previousElementSibling.classList.add("active__item");
 		
-		active.previousElementSibling.previousElementSibling.classList.add("inframe__item");
 	}
 	else
 	{console.log("No Child");}
