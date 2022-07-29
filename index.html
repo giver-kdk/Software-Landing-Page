@@ -15,26 +15,28 @@
 	<div class="home__section" id="top">
 		<div class="header__main ">
 			<div class="header__main--left">
-				<a href="#">
+				<a href="#home_page">
 					<img src="img/icons/Logo.jpg" alt="Site Logo">
+					<p>C-MAINT</p>
 				</a>
 			</div>
-			<div class="header__main--right">
-				<ul>
+			<div class="header__main--right" id="home_page">
+				<ul class="nav__area">
 					<li>
-						<a href="#" class="home">HOME</a>
+						<a href="#home_page" class="home">Home</a>
 					</li>
 					<li>
-						<a href="#" class="about__us">ABOUT US</a>
+						<a href="about_us/index.html" class="about__us">About Us</a>
 					</li>
 					<li>
-						<a href="#" class="services">SERVICES</a>
+						<a href="#services" class="services">Services</a>
 					</li>
 					<li>
-						<a href="#" class="blog">DOCS</a>
+						<a href="docs/index.html" class="document">Docs</a>
 					</li>
 					<li>
-						<a href="#" class="gallary">CONTACT US</a>
+						<a href="#contact" class="contact__us">
+							Contact Us</a>
 					</li>
 				</ul>
 			</div>
@@ -55,7 +57,9 @@
 			C-Maint (Computer Maintenance) is a performance enhancer with easy to use interface.
 			It provides multiple branches of optimization options.
 		</div>
-		<button class="btn" id="download">Download</button>
+		<a href="https://drive.google.com/drive/folders/1PKo5D6Fa0GB1lvgDXKQdP2cb_5bQYUJq?usp=sharing" target="_blank">
+			<button class="btn" id="download">Download</button>
+		</a>
 	</div>
 	<!-- UI Page -->
 	<div class="ui__section">
@@ -70,24 +74,20 @@
 		</div>
 	</div>
 	<!-- Features Section -->
-	<div class="features__container">
+	<div class="features__container" id="services">
 		<h2>Boost Up Performance</h2>
 		<div class="feature" id="delete__section">
 			<img src="img/delete_anim/000.png" alt="Image Sequence" class="sequence" id="delete__video"
 				data-btn="delete">
 			<div class="feature__info">
 				<h3>Get Rid of Junks</h3>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quo, voluptate inventore repellendus
-					dolorem aperiam ex fuga aliquid impedit facilis magni numquam, recusandae consectetur! Voluptates
-					similique molestiae nam excepturi, reprehenderit quia nihil.</p>
+				<p>Delete all the temporary junk files, DNS caches and corrupted files with just one click. C-Maint allows you to customly select desired the catagory for removing junks from your computer.</p>
 			</div>
 		</div>
 		<div class="feature" id="defrag__section">
 			<div class="feature__info">
-				<h3>Clean Up Mess</h3>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quo, voluptate inventore repellendus
-					dolorem aperiam ex fuga aliquid impedit facilis magni numquam, recusandae consectetur! Voluptates
-					similique molestiae nam excepturi, reprehenderit quia nihil.</p>
+				<h3>Defragment Your HDD</h3>
+				<p>Your data gets fragmented randomly on your hardddisk when used overtime. So, it slows down your PC performance. C-Maint provides you the facility to defragment your specified harddisk without any hastle.</p>
 			</div>
 			<img src="img/defrag_anim/000.png" alt="Image Sequence" class="sequence" id="defrag__video"
 				data-btn="defrag">
@@ -97,30 +97,30 @@
 				data-btn="process">
 			<div class="feature__info">
 				<h3>Manage Processes</h3>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quo, voluptate inventore repellendus
-					dolorem aperiam ex fuga aliquid impedit facilis magni numquam, recusandae consectetur! Voluptates
-					similique molestiae nam excepturi, reprehenderit quia nihil.</p>
+				<p>We give a little task-manager to track your background processes and memory usage. You can also prevent your computer from crashing/slowing by killing the unneccessary process. </p>
 			</div>
 		</div>
 	</div>
 	<!-- Developer Section -->
 	<div class="dev__section">
 		<!-- Display numbre of developers, supporters and downloads -->
-		<div class="numbers">
-			<div class="count_obj" id="developer">
-				<img src="img/icons/coding.svg" alt="Coding Icon">
-				<span class="counter" id="dev__count" data-number="124">0</span>
-				<p>Developers</p>
-			</div>
-			<div class="count_obj" id="supporter">
-				<img src="img/icons/group.svg" alt="Coding Icon">
-				<span class="counter" id="sup__count" data-number="672">0</span>
-				<p>Supporters</p>
-			</div>
-			<div class="count_obj" id="download">
-				<img src="img/icons/download.svg" alt="Coding Icon">
-				<span class="counter" id="down__count" data-number="160075">0</span>
-				<p>Downloads</p>
+		<div class="numbers__bg">
+			<div class="numbers">
+				<div class="count_obj" id="developer">
+					<img src="img/icons/coding.svg" alt="Coding Icon">
+					<span class="counter" id="dev__count" data-number="124">0</span>
+					<p>Developers</p>
+				</div>
+				<div class="count_obj" id="supporter">
+					<img src="img/icons/group.svg" alt="Coding Icon">
+					<span class="counter" id="sup__count" data-number="672">0</span>
+					<p>Supporters</p>
+				</div>
+				<div class="count_obj" id="download">
+					<img src="img/icons/download.svg" alt="Coding Icon">
+					<span class="counter" id="down__count" data-number="160075">0</span>
+					<p>Downloads</p>
+				</div>
 			</div>
 		</div>
 		<!-- Developer Help-->
@@ -130,12 +130,14 @@
 				<img src="img/assets/code.png" alt="Coding Image">
 				<div class="code__detail">
 					<h3>Build with QT and C++</h3>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus error ducimus, qui adipisci
-						ullam tempora deleniti necessitatibus, officia eligendi quo fuga dignissimos, facilis ex
-						recusandae. Dolores accusantium corporis voluptates repellat. Non, eos!</p>
+					<p> Its open source. We have used the robust QT framework for UI and C++ as a primary language. Learn more about the app and source code.</p>
 						<div class="source_btn">
-						<button class="btn" id="source">Source Code</button>
-						<button class="btn" id="docs">Documentation</button>
+							<a href="https://github.com/giver-kdk/C-Maint-Source-Code" target="_blank">
+								<button class="btn" id="source">Source Code</button>
+							</a>
+							<a href="docs/index.html">
+								<button class="btn" id="docs">Documentation</button>
+							</a>
 					</div>
 				</div>
 			</div>
@@ -151,7 +153,7 @@
 							<div class="testimonial__item edge__item"></div>
 							
 							<div class="testimonial__item testimonial1">
-								<img src="img/Smiling_Student.jpg" alt="Person1" class="person">
+								<img src="img/pablo.png" alt="Person1" class="person">
 								<div class="client__name">Full Name1</div>
 								<div class="client__profession">Profession</div>
 								<ul class="star__rating">
@@ -174,13 +176,11 @@
 								<div class="quote__sign row">
 									<img src="img/Inverted-Comma.png" alt="Double Inverted Comma">
 								</div>
-								<div class="client__review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-									eligendi accusantium tempora velit nam quos consequuntur ipsa ut optio similique suscipit ea
-									assumenda reiciendis, nobis ullam commodi reprehenderit et in veniam id.</div>
+								<div class="client__review"> I am so happy with this software. It worked so well so far and made my pc run smoothly.</div>
 							</div>
 					
 							<div class="testimonial__item testimonial2">
-								<img src="img/Smiling_Student.jpg" alt="Person2" class="person">
+								<img src="img/hecker.jpg" alt="Person2" class="person">
 								<div class="client__name">Full Name2</div>
 								<div class="client__profession">Profession</div>
 								<ul class="star__rating">
@@ -203,13 +203,11 @@
 								<div class="quote__sign row">
 									<img src="img/Inverted-Comma.png" alt="Double Inverted Comma">
 								</div>
-								<div class="client__review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-									eligendi accusantium tempora velit nam quos consequuntur ipsa ut optio similique suscipit ea
-									assumenda reiciendis, nobis ullam commodi reprehenderit et in veniam id.</div>
+								<div class="client__review"> It really does what it was intended to do. It helped my PC run faster, get the junk out and boost up performance. Thumbs up to this👍</div>
 							</div>
 		
 							<div class="testimonial__item testimonial3">
-								<img src="img/Smiling_Student.jpg" alt="Person3" class="person">
+								<img src="img/beluga.jpg" alt="Person3" class="person">
 								<div class="client__name">Full Name3</div>
 								<div class="client__profession">Profession</div>
 								<ul class="star__rating">
@@ -232,13 +230,11 @@
 								<div class="quote__sign row">
 									<img src="img/Inverted-Comma.png" alt="Double Inverted Comma">
 								</div>
-								<div class="client__review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-									eligendi accusantium tempora velit nam quos consequuntur ipsa ut optio similique suscipit ea
-									assumenda reiciendis, nobis ullam commodi reprehenderit et in veniam id.</div>
+								<div class="client__review"> My pc is already very fast. I installed this software thinking that it will improve the performance of my PC but there was literally no difference before and after.</div>
 							</div>
 		
 							<div class="testimonial__item testimonial4 active__item">
-								<img src="img/Smiling_Student.jpg" alt="Person4" class="person">
+								<img src="img/elon.jpg" alt="Person4" class="person">
 								<div class="client__name">Full Name4</div>
 								<div class="client__profession">Profession</div>
 								<ul class="star__rating">
@@ -261,13 +257,11 @@
 								<div class="quote__sign row">
 									<img src="img/Inverted-Comma.png" alt="Double Inverted Comma">
 								</div>
-								<div class="client__review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-									eligendi accusantium tempora velit nam quos consequuntur ipsa ut optio similique suscipit ea
-									assumenda reiciendis, nobis ullam commodi reprehenderit et in veniam id.</div>
+								<div class="client__review">I love C-Maint. It cleans my supercomputers and always helps me to keep the junk out which makes my stocks grow. I can even track my background proccess.</div>
 							</div>
 							
 							<div class="testimonial__item testimonial5">
-								<img src="img/Smiling_Student.jpg" alt="Person5" class="person">
+								<img src="img/hecker.jpg" alt="Person5" class="person">
 								<div class="client__name">Full Name5</div>
 								<div class="client__profession">Profession</div>
 								<ul class="star__rating">
@@ -290,13 +284,11 @@
 								<div class="quote__sign row">
 									<img src="img/Inverted-Comma.png" alt="Double Inverted Comma">
 								</div>
-								<div class="client__review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-									eligendi accusantium tempora velit nam quos consequuntur ipsa ut optio similique suscipit ea
-									assumenda reiciendis, nobis ullam commodi reprehenderit et in veniam id.</div>
+								<div class="client__review">The thing that I like aboout this application is that it allows me to defragment my harddisk with one click and I can literally kill any unneccessary backgrounnd applications to protect my pc.</div>
 							</div>
 		
 							<div class="testimonial__item testimonial6">
-								<img src="img/Smiling_Student.jpg" alt="Person6" class="person">
+								<img src="img/reader.jpg" alt="Person6" class="person">
 								<div class="client__name">Full Name6</div>
 								<div class="client__profession">Profession</div>
 								<ul class="star__rating">
@@ -319,13 +311,11 @@
 								<div class="quote__sign row">
 									<img src="img/Inverted-Comma.png" alt="Double Inverted Comma">
 								</div>
-								<div class="client__review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-									eligendi accusantium tempora velit nam quos consequuntur ipsa ut optio similique suscipit ea
-									assumenda reiciendis, nobis ullam commodi reprehenderit et in veniam id.</div>
+								<div class="client__review">I appreciate this software. It really enhanced the performance of my oldy goldy computer. I strongly recommend it.</div>
 							</div>
 		
 							<div class="testimonial__item testimonial7">
-								<img src="img/Smiling_Student.jpg" alt="Person7" class="person">
+								<img src="img/heck.png" alt="Person7" class="person">
 								<div class="client__name">Full Name7</div>
 								<div class="client__profession">Profession</div>
 								<ul class="star__rating">
@@ -348,9 +338,7 @@
 								<div class="quote__sign row">
 									<img src="img/Inverted-Comma.png" alt="Double Inverted Comma">
 								</div>
-								<div class="client__review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-									eligendi accusantium tempo2ra velit nam quos consequuntur ipsa ut optio similique suscipit ea
-									assumenda reiciendis, nobis ullam commodi reprehenderit et in veniam id.</div>
+								<div class="client__review">This software is really good because I am using this software since two months and my old laptop is working very smoothly.</div>
 							</div>
 							<div class="testimonial__item edge__item"></div>
 						</div>
@@ -361,10 +349,10 @@
 		</div>	
 
 		<!-- Contact Form Section -->
-		<div class="contact__section row">
+		<div class="contact__section row" id="contact">
 			<div class="contact__title">LET'S GET STARTED</div>
 			<div class="contact__information">
-				<form class="contact__info--form" action="GET">
+				<form class="contact__info--form" action="#" method="GET">
 					<label for="username"  class="form__label">Your Name:</label>
 					<input type="text" id="username" placeholder="First Last">
 					<span class="error" id="name__error"></span>
