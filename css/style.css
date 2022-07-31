@@ -33,6 +33,7 @@ body {
 .header__main {
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
 	align-items: center;
 	/* border: 2px solid red; */
 	width: 100%;
@@ -60,11 +61,17 @@ body {
 	font-size: 21px;
 	margin-left: 10px;
 }
-
+.bar__menu
+{
+	display: none;
+	filter: invert(0.7);
+}
 .header__main--right ul {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	flex-wrap: wrap;
+	/* border: 2px solid red; */
+	justify-content: space-evenly;
 	list-style: none;
 }
 .header__main--right ul li
@@ -76,8 +83,6 @@ body {
 	height: 55px;
 	/* border: 2px solid red; */
 }
-
-
 .header__main--right li{
 	overflow: visible;
 
@@ -167,11 +172,7 @@ body {
 	position: relative;
 	top: 0px;
 	left: 0px;
-	animation-name: spin;
-	animation-duration: 1s;
-	animation-timing-function: linear;
-	animation-fill-mode: forwards;
-	animation-iteration-count: infinite;
+	animation: spin 1s linear forwards infinite;
 }
 
 @keyframes spin {
@@ -189,8 +190,8 @@ body {
 	font-family: var(--heading-font-family);
 	font-size: 20px;
 	font-weight: 400;
-	padding-left: 120px;
-	padding-right: 120px;
+	padding-left: 7%;
+	padding-right: 7%;
 }
 
 .btn {
@@ -210,7 +211,7 @@ body {
 
 /* UI Page Styling */
 .ui__section {
-	padding: 10px;
+	padding: 7%;
 	padding-top: 60px;
 	width: 100%;
 	display: flex;
@@ -219,12 +220,11 @@ body {
 }
 
 .ui__bg {
-	width: 85%;
-	height: 700px;
+	width: 100%;
 	background-color: rgb(255, 133, 255);
 	background: linear-gradient(91.17deg, #aa4dcc 1%, #1dd2d2 99.79%);
-	;
 	border-radius: 30px;
+	padding: 10px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -232,9 +232,10 @@ body {
 }
 
 .ui__bg img {
-	margin-top: 70px;
+	margin-top: 7%;
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
+	width: 100%;
 }
 
 .floaters {
@@ -351,21 +352,16 @@ body {
 .feature {
 	/* border: 2px solid green; */
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	align-items: center;
 }
 
 .sequence {
 	/* border: 2px solid red; */
-	width: 600px;
+	width: 50%;
 }
 
 .features__container h2 {
-	/* text-align: center;
-	font-family: var(--heading-font-family);
-	font-size: 33px;
-	font-weight: 600;
-	line-height: 80px; */
 	text-align: center;
 	font-family: var(--heading-font-family);
 	font-size: 50px;
@@ -380,7 +376,7 @@ body {
 	align-items: center;
 	width: 40%;
 	text-align: justify;
-	margin: 80px;
+	margin: 7%;
 }
 
 .feature__info h3 {
@@ -395,7 +391,7 @@ body {
 	font-family: var(--body-font-family);
 	font-size: 19px;
 	font-weight: 400;
-	line-height: 20px;
+	line-height: 30px;
 }
 
 /* Developer Section */
@@ -415,10 +411,10 @@ body {
 
 }
 .numbers {
-	background-color: rgb(49, 49, 49);
 	background-color: #232323;
 	border-radius: 7px;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-around;
 	padding: 10px;
 	margin: 20px;
@@ -426,6 +422,8 @@ body {
 
 .count_obj {
 	display: flex;
+	padding-left: 5%;
+	padding-right: 5%;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -483,7 +481,10 @@ body {
 	border-radius: 7px;
 	filter: drop-shadow(3px 3px 10px rgb(5, 17, 26));
 }
-
+.code__detail
+{
+	padding: 30px;
+}
 .code__detail h3 {
 	text-align: left;
 	font-family: var(--heading-font-family);
@@ -511,30 +512,28 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 50px;
+	gap: 30px;
 }
 
 .testimonial__slider {
 	display: flex;
 	align-items: center;
+	flex-direction: column;
 	justify-content: center;
-	gap: 50px;
-	width: 80vw;
+	gap: 30px;
+	width: 90vw;
 	/* border: 2px solid red; */
 
 
 }
-
+.arrow
+{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
 .testimonial__title {
-	/* font-family: "Poppins", sans-serif;
-	font-size: 33px;
-	font-weight:700;
-	margin-bottom: 50px;
-	text-align: left; */
-	/* font-family: var(--heading-font-family);
-	font-size: 50px;
-	font-weight: 600;
-	line-height: 60px; */
 	text-align: center;
 	font-family: var(--heading-font-family);
 	font-size: 33px;
@@ -670,7 +669,7 @@ body {
 	font-weight: 400;
 	color: azure;
 	padding: 0 70px;
-	text-align: justify;
+	text-align: center;
 	margin-bottom: 10%;
 }
 
@@ -807,7 +806,8 @@ body {
 /* Footer Section Styling */
 footer {
 	margin-top: 50px;
-	height: 100px;
+	height: auto;
+	padding: 20px;
 	background-color: #12141b;
 	display: flex;
 	flex-direction: column;
@@ -827,6 +827,8 @@ footer p {
 	list-style: none;
 	width: 80%;
 	display: flex;
+	/* flex-wrap: wrap; */
+	align-items: center;
 	gap: 10px;
 	/* border: 2px solid red; */
 	justify-content: space-between;

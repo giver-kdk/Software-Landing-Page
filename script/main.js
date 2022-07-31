@@ -1,3 +1,17 @@
+// Bar Menu Logic
+let menuBar = document.querySelector(".bar__menu");
+
+menuBar.addEventListener("click", toggle_menu);
+function toggle_menu()
+{
+	let navBar = document.querySelector(".header__main--right");
+	navBar.classList.toggle("show__navbar");
+}
+
+
+
+
+
 // 3D Image Sequence Play Logic
 let deleteSeq = document.getElementById("delete__video");
 let defragSeq = document.getElementById("defrag__video");
