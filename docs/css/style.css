@@ -25,6 +25,8 @@ body {
 #main-doc
 {
 	margin-left: 150px;
+	margin-right: 20px;
+
 }
 .home__section {
 	display: flex;
@@ -32,12 +34,12 @@ body {
 	justify-content: center;
 	align-items: center;
 	gap: 10px;
-	
 }
 
 .header__main {
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
 	align-items: center;
 	/* border: 2px solid red; */
 	width: 100%;
@@ -65,11 +67,17 @@ body {
 	font-size: 21px;
 	margin-left: 10px;
 }
-
+.bar__menu
+{
+	display: none;
+	filter: invert(0.7);
+}
 .header__main--right ul {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	flex-wrap: wrap;
+	/* border: 2px solid red; */
+	justify-content: space-evenly;
 	list-style: none;
 }
 .header__main--right ul li
@@ -81,15 +89,9 @@ body {
 	height: 55px;
 	/* border: 2px solid red; */
 }
-
-
 .header__main--right li{
 	overflow: visible;
-
 }
-
-
-
 
 .header__main--right li a {
 
@@ -108,9 +110,9 @@ body {
 	/* border: 2px solid red; */
 	/* transition: all 0.2s ease-in-out; */
 }
-.header__main--right li .document
+.header__main--right li .home
 {
-	background-image: url('../img/icons/parallelogram_shape.svg');
+	background-image: url('../../img/icons/parallelogram_shape.svg');
 	background-position: center;
 	background-size: 140px;
 	background-repeat: no-repeat;
@@ -118,7 +120,7 @@ body {
 
 .header__main--right li a:hover {
 	color: white;
-	background-image: url('../img/icons/parallelogram_shape.svg');
+	background-image: url('../../img/icons/parallelogram_shape.svg');
 	/* background-image: linear-gradient(red, blue); */
 	background-position: center;
 	background-size: 140px;
@@ -126,10 +128,12 @@ body {
 	transition: opacity 0.2s ease-in-out;
 
 }
+
 #navbar
 {
 	position: fixed;
 	margin-top: 20px;
+	margin-left: 5px;
 	float: left;
 	height: 250px;
 	background-color: var(--primary-color);
@@ -137,9 +141,13 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	text-align: justify;
+	text-align: left;
 	padding: 10px;
 	top: 25%;
+}
+.nav
+{
+	list-style: none;
 }
 #navbar a
 {
@@ -147,7 +155,7 @@ body {
 	font-family: var(--body-font-family);
 	font-size: 17px;
 	font-weight: 600;
-	line-height: 35px;
+	line-height: 30px;
 	color: azure;
 
 }
@@ -166,8 +174,9 @@ body {
 	font-family: var(--body-font-family);
 	font-size: 19px;
 	font-weight: 400;
-	line-height: 20px;
-	width: 90%;
+	line-height: 30px;
+	width: 100%;
+	text-align: left;
 }
 .lead img
 {
@@ -177,7 +186,8 @@ body {
 /* Footer Section Styling */
 footer {
 	margin-top: 50px;
-	height: 100px;
+	height: auto;
+	padding: 20px;
 	background-color: #12141b;
 	display: flex;
 	flex-direction: column;
@@ -197,6 +207,8 @@ footer p {
 	list-style: none;
 	width: 80%;
 	display: flex;
+	/* flex-wrap: wrap; */
+	align-items: center;
 	gap: 10px;
 	/* border: 2px solid red; */
 	justify-content: space-between;
