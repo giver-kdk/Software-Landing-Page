@@ -305,6 +305,13 @@ body {
 	font-size: 50px;
 	font-weight: 600;
 	line-height: 60px;
+	/* Gradient in text CSS */
+	background: linear-gradient(91.04deg,#cb5eee 40.5%,#1dd2d2 99.81%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
 }
 
 .feature__info {
@@ -339,6 +346,16 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+.code__detail h3
+{
+	/* Gradient in text CSS */
+	background: linear-gradient(91.04deg,#cb5eee 40.5%,#1dd2d2 99.81%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
 }
 .numbers__bg
 {
@@ -479,6 +496,13 @@ body {
 	line-height: 30px;
 	margin-top: 100px;
 	margin-bottom: 10px;
+	/* Gradient in text CSS */
+	background: linear-gradient(91.04deg,#cb5eee 40.5%,#1dd2d2 99.81%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
 }
 
 .testimonial__display {
@@ -643,6 +667,13 @@ body {
 	line-height: 30px;
 	margin-top: 90px;
 	margin-bottom: 20px;
+	/* Gradient in text CSS */
+	background: linear-gradient(91.04deg,#cb5eee 40.5%,#1dd2d2 99.81%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
 }
 
 .contact__information {

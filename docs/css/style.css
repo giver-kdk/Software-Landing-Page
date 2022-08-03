@@ -110,7 +110,7 @@ body {
 	/* border: 2px solid red; */
 	/* transition: all 0.2s ease-in-out; */
 }
-.header__main--right li .home
+.header__main--right li .document
 {
 	background-image: url('../../img/icons/parallelogram_shape.svg');
 	background-position: center;
@@ -143,7 +143,7 @@ body {
 	justify-content: center;
 	text-align: left;
 	padding: 10px;
-	top: 25%;
+	top: 25vh;
 }
 .nav
 {
