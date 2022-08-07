@@ -203,11 +203,15 @@ body {
 	color: white;
 	font-family: var(--body-font-family);
 	font-size: 17px;
+	transition: all 0.3s ease-out;
+
 }
 
 .btn:hover {
 	cursor: pointer;
+	letter-spacing: 3px;
 }
+
 
 /* UI Page Styling */
 .ui__section {
@@ -761,9 +765,12 @@ body {
 	justify-content: flex-end;
 	align-items: flex-end;
 }
-.goto__top:hover {
+.top__link
+{
+	width: auto;
+}
+.top__link:hover {
 	filter: brightness(1.5);
-
 }
 
 #up__arrow {
